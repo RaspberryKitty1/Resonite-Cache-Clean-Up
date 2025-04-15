@@ -1,49 +1,87 @@
 # Resonite-Cache-Clean-Up
-A collection of scripts to help clean the Resonite Cache files.
 
-Originally created by an unknown person for NeosVR, the script was designed to clean up old cache files for the game **Resonite**. The original script was written in PowerShell (.ps1) and has since been ported to Python and JavaScript for added flexibility and convenience.
+A collection of scripts to help clean up cache files from the game **Resonite**.
 
-## Scripts Included:
-- **resonitecachecleanup.ps1**: PowerShell script to delete files in the Resonite cache that haven't been accessed in the last 7 days.
-- **resonitecachecleanup.js**: JavaScript version of the script, using Node.js to clean up Resonite cache files.
-- **resonitecachecleanup.py**: Python version of the script for deleting old Resonite cache files.
+Originally created by an unknown developer for **NeosVR**, the script was designed to remove outdated cache files. This project ports that original PowerShell script into Python and JavaScript to offer broader compatibility and ease of use.
 
-## Usage Instructions:
+---
 
-### PowerShell (`resonitecachecleanup.ps1`):
-1. Open PowerShell as Administrator.
-2. Navigate to the directory where the `resonitecachecleanup.ps1` script is located.
-3. Run the script by typing:  
-   `powershell ./resonitecachecleanup.ps1`
-4. The script will remove files in the Resonite cache that have not been accessed in the last 7 days.
+## 🧹 Included Scripts
 
-### JavaScript (`resonitecachecleanup.js`):
-1. Make sure you have Node.js installed on your system.
-2. Save the script as resonitecachecleanup.js.
-3. Open a command prompt or terminal and navigate to the directory where the script is located.
-4. Run the script by typing:
+- **`resonitecachecleanup.ps1`**  
+  PowerShell script that deletes Resonite cache files not accessed in the last **7 days**.
 
-`node resonitecachecleanup.js`
+- **`resonitecachecleanup.js`**  
+  JavaScript version (Node.js) that performs the same cache-cleaning operation.
 
-### Python (`resonitecachecleanup.py`):
-1. Make sure you have Python 3.x installed on your system.
-2. Save the script as resonitecachecleanup.py.
-3. Open a terminal or command prompt and navigate to the directory where the script is located.
-4. Run the script by typing:
+- **`resonitecachecleanup.py`**  
+  Python version for cross-platform cache cleanup.
 
-`python resonitecachecleanup.py`
+---
 
-### Features:
+## ⚙️ Usage Instructions
 
-The scripts will delete cache files that haven't been accessed in the last 7 days.
+### 🔵 PowerShell (`resonitecachecleanup.ps1`)
 
-The cache directories are located at:
+1. Open PowerShell **as Administrator**.
+2. Navigate to the folder containing the script.
+3. Run the command:
 
-`AppData\LocalLow\Yellow Dog Man Studios\Resonite\Assets`
+   ```powershell
+   powershell ./resonitecachecleanup.ps1
+   ```
 
-`AppData\Local\Temp\Yellow Dog Man Studios\Resonite\Cache`
+4. The script will delete any cache files not accessed in the past 7 days.
 
+---
 
-Disclaimer:
+### 🟢 JavaScript (`resonitecachecleanup.js`)
 
-This project is not affiliated with or endorsed by Yellow Dog Man Studios or Resonite. The scripts are provided as-is for personal use to clean up cache files from the game Resonite.
+1. Ensure [Node.js](https://nodejs.org/) is installed on your system.
+2. Open a terminal or command prompt.
+3. Navigate to the directory containing the script.
+4. Run:
+
+   ```bash
+   node resonitecachecleanup.js
+   ```
+
+---
+
+### 🐍 Python (`resonitecachecleanup.py`)
+
+1. Make sure Python 3.x is installed.
+2. Open a terminal or command prompt.
+3. Navigate to the directory containing the script.
+4. Run:
+
+   ```bash
+   python resonitecachecleanup.py
+   ```
+
+---
+
+## 📁 Cache Directories
+
+These scripts target the following Resonite cache locations:
+
+- `%AppData%\LocalLow\Yellow Dog Man Studios\Resonite\Assets`
+- `%LocalAppData%\Temp\Yellow Dog Man Studios\Resonite\Cache`
+
+These locations may contain large or outdated files over time, especially if you've been using Resonite heavily. This cleanup helps reclaim space and improve performance.
+
+---
+
+## 🔍 Features
+
+- Deletes files **not accessed** in the past **7 days**.
+- Can be run manually or scheduled as part of system maintenance.
+- Supports Windows environments (Linux/macOS support via Python/Node.js, but paths must be adjusted).
+
+---
+
+## ⚠️ Disclaimer
+
+This project is **not affiliated with or endorsed** by Yellow Dog Man Studios or Resonite.
+
+The scripts are provided **as-is** for personal use. Use at your own discretion. Always back up important data before running automated cleanup tools.
